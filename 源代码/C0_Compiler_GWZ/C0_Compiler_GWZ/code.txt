@@ -1,0 +1,22 @@
+void l1()
+printf "L1"
+void label1()
+printf "Label1"
+void l_1()
+printf "L_1"
+void label_1()
+printf "Label_1"
+void main()
+abcd = 666
+^1 = 1 + t1
+^2 = ^1 + _t1
+^3 = ^2 + t_1
+^4 = ^3 + _t_1
+^5 = ^4 + temp1
+^6 = ^5 + _temp1
+^7 = ^6 + temp_1
+^8 = ^7 + _temp_1
+abcd = ^8
+printf abcd
+printf "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+printf "!#$%&'()*+,-./:;<=>?@[]^_`{|}~"

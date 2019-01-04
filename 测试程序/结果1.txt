@@ -1,0 +1,24 @@
+Test: defination, IO, paramenter and return.
+*1    注：输入一个字符和一个数字
+_
+0
+_
+*
+2
+0
+1
+2
+void_np
+void_p
+char_np
+char_1p
+char_p
+int_np
+int_1p
+int_p
+_
+*
+2
+0
+1
+2

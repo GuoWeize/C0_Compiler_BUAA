@@ -1,0 +1,13 @@
+int foo (int a) {
+    return a;
+}
+
+int main () {
+    const int c=1,d=5;
+    const;
+    void a;
+    int b;
+    int ;
+
+    foo(a,b);
+}

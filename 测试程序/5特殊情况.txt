@@ -1,0 +1,17 @@
+void L1 {printf("L1");}
+void Label1 {printf("Label1");}
+void L_1 {printf("L_1");}
+void Label_1 {printf("Label_1");}
+
+vOid mAin () {
+    const int t1=1, _t1=1, t_1=1, _t_1=1;
+    const int temp1=1, _temp1=1, temp_1=1, _temp_1=1;
+    InT AbcD;
+
+    aBcd = 666;
+    AbcD = 1+t1+_t1+t_1+_t_1+temp1+_temp1+temp_1+_temp_1;
+    
+    pRIntf(abCD);
+    prInTf("ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz");
+    PRintF("!#$%&'()*+,-./:;<=>?@[]^_`{|}~");
+}

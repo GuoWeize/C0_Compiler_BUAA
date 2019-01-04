@@ -1,0 +1,130 @@
+#Compiler's result#
+###################
+move $fp,$sp
+.data
+$string0: .asciiz "\n"
+.text
+jal main
+li $v0,10
+syscall
+
+
+l1:
+move $fp,$sp
+addi $sp,$sp,-40
+.data
+$string1: .asciiz "L1\n"
+.text
+li $v0,4
+la $a0,$string1
+syscall
+move $sp,$fp
+jr $ra
+
+label1:
+move $fp,$sp
+addi $sp,$sp,-40
+.data
+$string2: .asciiz "Label1\n"
+.text
+li $v0,4
+la $a0,$string2
+syscall
+move $sp,$fp
+jr $ra
+
+l_1:
+move $fp,$sp
+addi $sp,$sp,-40
+.data
+$string3: .asciiz "L_1\n"
+.text
+li $v0,4
+la $a0,$string3
+syscall
+move $sp,$fp
+jr $ra
+
+label_1:
+move $fp,$sp
+addi $sp,$sp,-40
+.data
+$string4: .asciiz "Label_1\n"
+.text
+li $v0,4
+la $a0,$string4
+syscall
+move $sp,$fp
+jr $ra
+
+main:
+move $fp,$sp
+addi $sp,$sp,-40
+addi $sp,$fp,-44
+li $t0,666
+add $t1,$t0,$0 
+sw $t1,-44($fp)
+addi $sp,$fp,-48
+li $t0,1
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-48($fp)
+addi $sp,$fp,-52
+lw $t0,-48($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-52($fp)
+addi $sp,$fp,-56
+lw $t0,-52($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-56($fp)
+addi $sp,$fp,-60
+lw $t0,-56($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-60($fp)
+addi $sp,$fp,-64
+lw $t0,-60($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-64($fp)
+addi $sp,$fp,-68
+lw $t0,-64($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-68($fp)
+addi $sp,$fp,-72
+lw $t0,-68($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-72($fp)
+addi $sp,$fp,-76
+lw $t0,-72($fp)
+li $t1,1
+add $t2,$t0,$t1
+sw $t2,-76($fp)
+lw $t0,-76($fp)
+add $t1,$t0,$0 
+sw $t1,-44($fp)
+lw $a0,-44($fp)
+li $v0,1
+syscall
+li $v0,4
+la $a0,$string0
+syscall
+.data
+$string5: .asciiz "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz\n"
+.text
+li $v0,4
+la $a0,$string5
+syscall
+.data
+$string6: .asciiz "!#$%&'()*+,-./:;<=>?@[]^_`{|}~\n"
+.text
+li $v0,4
+la $a0,$string6
+syscall
+
+#Compiling finished.#
+#No errors. ^_^ #

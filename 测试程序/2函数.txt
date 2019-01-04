@@ -1,0 +1,43 @@
+const int a=1, b=2;
+
+int max (int p1, int p2) {
+    if (p1>p2){
+        return (a);
+    }
+    else return(0);
+}
+
+int loop (int a, int b) {
+    if (a*b<4) return (a+b);
+    else return (loop(a-1, b-1));
+}
+
+int loop_l (int a, int b) {
+    if (a*b<4) return (a+b);
+    else return (loop(a-1, b));
+}
+
+int loop_r (int a, int b) {
+    if (a*b<4) return (a+b);
+    else return (loop(a, b-1));
+}
+
+
+void main () {
+    const int p1=1, p2=2;
+    int a,b;
+    int array[3];
+
+    array[0]=1; array[1]=2; array[2]=3;
+    scanf(a); scanf(b);
+
+    printf("loop:", loop(a,b));
+    printf("loop_l:", loop_l(a,b));
+    printf("loop_r:", loop_r(a,b));
+
+    printf(max(p2, 5));
+    printf(max(array[2], p1));
+    printf(max(3, a));
+    printf(max(b, array[1]));
+
+}

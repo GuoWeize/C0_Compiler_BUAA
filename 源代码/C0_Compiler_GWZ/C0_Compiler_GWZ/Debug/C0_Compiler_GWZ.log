@@ -1,0 +1,9 @@
+﻿  Table.cpp
+  Parser.cpp
+  MIPS.cpp
+  Lexer.cpp
+  Error.cpp
+  Compiler.cpp
+  Code.cpp
+  正在生成代码...
+  C0_Compiler_GWZ.vcxproj -> G:\编译\大作业\C0_Compiler_GWZ\Debug\C0_Compiler_GWZ.exe

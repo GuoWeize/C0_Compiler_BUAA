@@ -1,0 +1,86 @@
+const char const_c0='_';
+const char const_c1='*', const_c2='2';
+const int const_i0=0;
+const int const_i1=1, const_i2=2;
+
+char char_0; char a_c1[1];
+char char_1, a_c2[2], a_c3[3], char_2, char_3;
+int int_0; int a_i1[1];
+int int_1, a_i2[2], a_i3[3], int_2, int_3;
+
+void void_np {
+    printf("void_np");
+    return;
+}
+
+void void_p (char p1, int p2) {
+    printf("void_p");
+    return;
+}
+
+char char_np {
+    printf("char_np");
+    return (const_c0);
+}
+
+char char_1p (char p) {
+    char r;
+    printf("char_1p");
+    r = p;
+    return (r);
+}
+
+char char_p (char p1, int p2, int p3, char p4, char p5) {
+    printf("char_p");
+    return (p1);
+}
+
+int int_np {
+    printf("int_np");
+    return (const_i0);
+}
+
+int int_1p (int p) {
+    int r;
+    printf("int_1p");
+    r= p;
+    return (p);
+}
+
+int int_p (int p1, char p2, char p3, int p4, int p5) {
+    printf("int_p");
+    return (p4);
+}
+
+
+void main () {
+    char _cnp;
+    char _c1p, _cp;
+    int _inp;
+    int _i1p, _ip;
+
+    printf("Test: defination, IO, paramenter and return.");
+    
+    char_0=const_c0; char_1=const_c1; char_2=const_c2;
+    int_0=const_i0; int_1=const_i1; int_2=const_i2;
+    a_c1[0]=char_0; a_c2[1]=char_1; a_c3[0]=a_c1[0]; a_c3[1]=a_c2[1];
+    a_i1[0]=int_0; a_i2[1]=int_1; a_i3[0]=a_i1[0]; a_i3[1]=a_i2[1];
+
+    scanf(char_3); scanf(int_3);
+    printf(const_c0); printf(const_i0);
+    printf(char_0); printf(char_1); printf(char_2);
+    printf(int_0); printf(int_1); printf(int_2);
+
+    void_np;
+    void_p(char_1, int_1);
+    _cnp = char_np;
+    _c1p = char_1p(char_1);
+    _cp = char_p(char_2, int_0, int_1, char_0, char_1);
+    _inp = int_np;
+    _i1p = int_1p(int_1);
+    _ip = int_p(int_0, char_0, char_1, int_2, int_1);
+
+    printf(_cnp);printf(_c1p);printf(_cp);
+    printf(_inp);printf(_i1p);printf(_ip);
+
+}

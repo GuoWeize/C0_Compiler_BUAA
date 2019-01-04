@@ -1,0 +1,31 @@
+const char b=;
+const int c=;
+const e = 3;
+const int f 4;
+char d[3;
+int a[];
+
+int f1 (int ) {
+    int temp
+    while (f<7 {}
+    temp = 3+;
+}
+
+void f2 {
+    printf();
+    d 4] = 1;
+    while (e<3) }
+}
+
+f3 (int a) {}
+
+void f4 {
+
+
+int main ) {
+    switch () {
+        default ;
+    }
+    () {}
+    else
+}

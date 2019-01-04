@@ -1,0 +1,29 @@
+int _int (int a) {
+    return (+a+1);
+}
+
+char _char {
+    return ('K');
+}
+
+
+void  main () {
+    const char c0='a', c1='A', c2='_';
+    char c_array[4];
+    int zero, a;
+
+    c_array[0]='+';
+    c_array[1]='-';
+    c_array[2]='*';
+    c_array[3]='/';
+    zero = 0;
+    scanf(a);
+
+    printf(_char*a/5 + c_array[1]/c1*_int(a));
+    printf(- (c0+a-_char) * (c_array[1]-_int(a)+6) );
+    printf(+-4-0/+1+0);
+    printf(--66/(-(+2++5))--8);
+    printf(-_int(a));
+    printf(+_char);
+
+}

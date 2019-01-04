@@ -1,0 +1,12 @@
+int array[];
+
+int fibo (int n) 
+    if (a<0) return(-1);
+	else{}
+}
+
+void main () {
+	int n;
+	scanf(n;
+	printf(fibo(n));
+}

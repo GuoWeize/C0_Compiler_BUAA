@@ -1,0 +1,349 @@
+const int cst1 = 1, cst2 = 2, cst3 = 3;
+const char csta = 'a', cstb = 'b', cstc = 'c';
+int g_a, g_b, g_arr[2048];
+char g_stra[1024], g_strb[2048];
+
+
+void const_define {
+    const int a = 1;
+    const int b = 0, c = -1;
+    const char cst23='x';
+    const char cst24='z', constA0='A', cstA1='1', cst_div = '/';
+    printf(a);   
+    printf(cst_div);
+}
+
+void const_define_test {
+    const_define;
+}
+
+void var_define {
+    int a, arr[1], _a, _arr[2], a1, arr1[3];
+    char b, strb[1], _b, _bstr[2], _b1, _bstr1[3];
+    int c;
+    char z;
+}
+void var_define_test {
+    var_define ;
+}
+
+void define {
+    const int int1 = 1;
+    const char cst24='z', constA0='A';
+    int val1;
+    char b, strb[1];
+}
+
+void define_test {
+    var_define_test ;
+    const_define_test ;
+    define ;
+    printf("define test passed");
+}
+
+void operator {
+    int a, b, c, d, e, f;
+    a = 1; b = 1 + 2; c = 3 * 1; d = -4; e = 5; f = 6;
+    a = (b * 3) + c - d / 4 + a / a;
+    b = + 0 + a + (a * 3) + c - d / 4 + e * f;
+    e = -(a) + b * 0 - (1 - 0);
+}
+
+void operator_test {
+    operator ;
+    printf("operator test passed");
+}
+void string {
+    printf("ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz");
+    printf("!#$%&'()*+,-./:;<=>?@[]^_`{|}~");
+}
+void string_test {
+    string ;
+
+}
+void dowhile {
+    int i;
+    i = 100;
+
+    while (i >= 10) {
+        if (i >= 50) 
+            i = i / 2;
+        else
+            i = (i + 10) / 10;
+    }
+
+	while (0) {}
+    i = i - 1;
+    printf("dowhile test passed");
+}
+
+void dowhile_test {
+    dowhile ;
+}
+
+void ifcondition {
+    int a, rightnumber;
+    a = 1;
+    rightnumber = 0;
+    if (a == 1) rightnumber = rightnumber + 1; else;
+    a = 2;
+    if (a > 1) rightnumber = rightnumber + 1; else;
+    a = 0;
+    if (a < 1) rightnumber = rightnumber + 1; else;
+    if (a != 1) rightnumber = rightnumber + 1; else;
+    if (a >= 0) rightnumber = rightnumber + 1; else;
+    if (a <= 0) rightnumber = rightnumber + 1; else;
+    if (rightnumber !=  (1 + 1 + 1 + 1 * 3))
+        printf("ifcondition clause error!"); else;
+    if (rightnumber != RIGHTNUMBER)
+        printf("ifcondition clause error"); else;
+}
+
+
+int switchcodintionans(int x){
+    switch (x) {
+        case 1 : return (2);
+        case 2 : return (3);
+        case 3 : return (4);
+    }
+    return (5);
+}
+
+
+int switchcodintion {
+    int i, rightnumber;
+    i = 1;
+    rightnumber = 0;
+    while (i < 5) {
+        if ( i + 1 == switchcodintionans(i))
+            rightnumber = rightnumber + 1;
+		else;
+        i = i + 1;
+    }
+    if (rightnumber != 4)
+        printf("switchcodintion clause  error!");
+	else;
+    if (rightnumber)
+        return (i);
+	else;
+    printf("switchcodintion clause  error!");
+}
+
+void condition {
+    const int intermax = 5;
+    int iter;
+    iter = 0;
+    while (iter < intermax) {
+        switch (iter){
+            case 0: if (iter != 0) printf("error 0"); else;
+            case 1: if (iter != 1) printf("error 1"); else;
+            case 2: if (iter != 2) printf("error 2"); else;
+        }
+        iter = iter + 1;
+    }
+}
+
+void condition_test {
+    ifcondition ;
+    switchcodintion ;
+    condition ;
+    printf("condition test passed");
+}
+
+
+void miscellaneous {
+    int _, a, array[23], i, endid;
+    char ch1, buf[256];
+    _ = 1; a = 2; i= 0;
+    while (i < 23) {
+        array[i] = i;
+        i = i + 1;
+    }
+    ch1 = 'a';
+    i = 127;
+    endid = i;
+    _ = 0;
+
+    while (_ < endid) {
+        buf[ (_ * 1 - _ - 1 + 2 / 1 - 1) / 2] =  'a';
+        _ = _ + 1;
+    }
+
+    ;;;;;;;;;{}{};;;;;{}{}{;;;;;;};;;
+    if (buf[0] == 'a')
+    printf("miscellaneous test passed");
+	else;
+}
+void miscellaneous_test {
+    miscellaneous ;
+}
+
+
+int fibonaci(int n){
+    switch (n){
+        case 0: return (0);
+        case 1: return (1);
+        case 2: return (1);
+    }
+    return (fibonaci(n - 1) + fibonaci(n - 2));
+}
+
+void fibonaci_test {
+    int n;
+    printf("Fibonaci: Please input a unsigned positive integer ?");
+    scanf(n);
+    if (n < 0){
+        printf("Input error, try again:");
+        scanf(n);
+    }
+    else {
+        printf("The fibonaci's answer is ", fibonaci(n));   
+    }
+}
+
+
+int mod(int n, int m){
+    return (n - n / m * m);
+}
+int gcd(int n, int m){
+    int rem;
+    rem = 0;
+    if (n == 0)
+        return (m);
+    else if (m == 0)
+        return (n);
+    else return (gcd(m, mod(n, m)));
+}
+
+int isWrongGcd(int n, int m){
+    if (n <= 0)
+        return (1);
+	else;
+    if (m <= 0)
+        return (1);
+	else;
+    return (0);
+}
+void gcd_test {
+    int n, m;
+    printf("GCD: Please input two unsigned positive integer ?");
+    scanf(n, m);
+    if (isWrongGcd(n, m)){
+        while (isWrongGcd(n, m)) {
+            printf("Input error, try Again: ");
+            scanf(n, m);
+        }
+    }
+	else;
+    printf("The gcd's answer is ", gcd(n, m));
+}
+
+int is_prime(int x){
+    int i;
+    i = 2;
+    if (x == 2)
+        return (1);
+	else;
+    while (i * i <= x) {
+        if (mod(x, i) == 0)
+            return (0);
+		else;
+        i = i + 1;
+    }
+    return (1);
+}
+
+void prime_factorization(int n){
+    int i, first;
+    i = 2;
+    first = 0;
+    if (n == 1){
+        printf("1");
+        return ;
+    }
+	else;
+    while(i * i < n) {
+        if (is_prime(i) == 1) {
+            if (mod(n, i) == 0){
+                while (mod(n, i) == 0) {
+                    n = n / i;
+                    if (first == 1)
+                        printf("*");
+					else;
+                    first = 1;
+                    printf(i);
+                }
+            }else;
+        }else;
+        i = i + 1;
+    }
+
+    if (n != 1){
+        if (first == 1)
+            printf("*");
+		else;
+        printf(n);
+    }
+	else;
+}
+
+void prime_factorization_test {
+    int n;
+    printf("prime_factorization: Please input a unsigned positive integer(<2^31-1) ?");
+    scanf(n);
+    if (n < 0) {
+        while (n < 0) {
+            printf("Input error, try again:");
+            scanf(n);
+        }
+    }
+	else;
+    printf("The factor of n is ");
+    prime_factorization(n);
+}
+int iswrong(char A){
+    if ('E' == A)
+        return (0);
+    else if ('M' == A)
+        return (0);
+    else if ('H' == A)
+        return (0);
+    else return (1);
+}
+
+void main () {
+    char kind;
+    printf("Please input Test Type:E(Easy), (M)Middle, H(Hard): ");
+    scanf(kind);
+    if (isWrong(kind)){
+        while (isWrong(kind)) {
+            printf("Try Again: ");
+            scanf(kind);
+        }
+    }
+	else;
+
+    switch(kind){
+    case 'E': {
+                define_test ;
+                operator_test ;
+                fibonaci_test ;
+            }
+    case 'M': {
+                dowhile_test ;
+                condition_test ;
+                string_test ;
+                gcd_test ;
+            }
+    case 'H': {
+            define_test ;
+            operator_test ;
+            dowhile_test ;
+            condition_test ;
+            string_test ;
+            miscellaneous_test ;
+            prime_factorization_test ;
+        }
+    }
+    return ;
+}

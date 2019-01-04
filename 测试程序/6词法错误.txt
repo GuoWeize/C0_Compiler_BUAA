@@ -1,0 +1,7 @@
+int main () {
+    const char a='', b='ab', c='%', d=';
+    if (a<>'5') {
+        printf("\"");
+    }
+    else printf(");
+}

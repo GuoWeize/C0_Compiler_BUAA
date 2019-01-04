@@ -1,0 +1,22 @@
+char b, e;
+int a[3], c;
+int e;
+
+int foo (int a) {
+    return b;
+}
+
+void main () {
+    a[b] = a[3];
+    c=d;
+    foo(b);
+    foo(c) = b;
+    c=a;
+    scanf(a);
+    b=c;
+    
+    switch (b) {
+        case 3:;
+    }
+
+}

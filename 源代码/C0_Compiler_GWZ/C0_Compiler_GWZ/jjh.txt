@@ -1,0 +1,70 @@
+const int stepmask = -1;
+
+int list[10];
+char op;
+
+int choose_pivot(int i, int j) {
+    return((i + j) / 2);
+}
+
+
+void printlist(int n) {
+    int i;
+    i = 0;
+    while (i < n) {
+        printf(list[i]); i = i + 1;
+    }
+}
+
+
+void quicksort(int m, int n) {
+    int key, x, y, z, tmp;
+
+    key = list[choose_pivot(m, n)];
+    x = m;
+    y = n;
+    while (x <= y) {
+        while (key <list[y]) y = y - 1;
+        while (key > list[x]) x = x + 1;
+        if (x <= y) {
+            tmp = list[x];
+            list[x] = list[y];
+            list[y] = tmp;
+            x = x + 1;
+            y = y - 1;
+        }
+        else;
+    }
+    if (x<n)
+        quicksort(x, n);
+    else;
+    if (m<y)
+        quicksort(m, y); else;
+}
+
+
+void arrayCheck {
+    const int a = 10;
+    int i;
+    i = 0;
+	while (i < 10) {
+		list[i] = 10 - i;
+		i = i + 1;
+	}
+	list[1] = 16;
+	list[2] = 3;
+	list[3] = -8;
+	list[4] = 40;
+	list[5] = -1;
+	list[6] = 2;
+	list[7] = -10;
+	i = 1;
+	quicksort(choose_pivot(0, choose_pivot(1, 1) - i), choose_pivot(9, 9));
+	printlist(10);
+}
+
+
+
+void main () {
+    arrayCheck;
+} 
